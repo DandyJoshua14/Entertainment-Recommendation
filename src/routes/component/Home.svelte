@@ -29,18 +29,18 @@
 	}
 </script>
 
-<html lang="en" class="mx-auto">
+<html lang="en" class="container m-auto overflow-auto">
 	<Container>
 		<Nav />
 		<div
-			class="h-fit items-center overflow-hidden px-[50px] py-[50px] text-center"
+			class="h-fit items-center overflow-hidden py-[50px] text-center"
 			in:fly={{ y: 200, duration: 2000 }}
 			out:fade
 		>
 			<h1 class="text-center text-4xl font-bold">Movies</h1>
 			<br />
 			<div
-				class="mx-auto grid grid-cols-1 items-center gap-x-64 overflow-hidden px-20 pr-32 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+				class="mx-auto grid grid-cols-1 items-center gap-x-64 overflow-hidden px-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:pr-32 xl:grid-cols-4"
 			>
 				{#each values as value}
 					<a href={`/details/${value.id}`} target="about:_blank">
