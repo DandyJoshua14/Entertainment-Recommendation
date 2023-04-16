@@ -6,7 +6,6 @@
 	let response = data.respond.results;
 	let movies = data.movies.results;
 	let results = [...movies, ...response];
-	console.log(results);
 	let searchterm = '';
 </script>
 
