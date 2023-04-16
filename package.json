@@ -17,16 +17,29 @@
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.5.0",
+		"@tailwindcss/forms": "^0.5.3",
+		"autoprefixer": "^10.4.13",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"postcss": "^8.4.21",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
+		"prettier-plugin-tailwindcss": "^0.2.4",
 		"svelte": "^3.54.0",
 		"svelte-check": "^3.0.1",
+		"tailwindcss": "^3.2.7",
 		"typescript": "^4.9.3",
 		"vite": "^4.0.0",
 		"vitest": "^0.25.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"bootstrap-icons": "^1.10.3",
+		"dotenv": "^16.0.3",
+		"firebase": "^9.19.1",
+		"mongoose": "7.0.1",
+		"svelte-persistent-store": "^0.1.6",
+		"sveltestrap": "^5.10.0"
+	}
 }

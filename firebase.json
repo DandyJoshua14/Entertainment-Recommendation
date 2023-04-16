@@ -1,0 +1,17 @@
+{
+    "apiKey": "AIzaSyDdpOXm_p3YuwLNRDQZy125NTG9MvlSHcs",
+    "authDomain": "entertainment-recommenda-e2bf2.firebaseapp.com",
+    "projectId": "entertainment-recommenda-e2bf2",
+    "storageBucket": "entertainment-recommenda-e2bf2.appspot.com",
+    "messagingSenderId": "342401252222",
+    "appId": "1:342401252222:web:0cc1db6ad65f261e03912f",
+    "measurementId": "G-J5HF9LELZJ",
+    "hosting": {
+        "public": "public",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ]
+    }
+}
