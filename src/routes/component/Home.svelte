@@ -29,48 +29,50 @@
 	}
 </script>
 
-<html lang="en" class="container m-auto overflow-auto">
-	<Container>
-		<Nav />
-		<div
-			class="h-fit items-center overflow-hidden py-[50px] text-center"
-			in:fly={{ y: 200, duration: 2000 }}
-			out:fade
-		>
-			<h1 class="text-center text-4xl font-bold">Movies</h1>
-			<br />
+<html lang="en">
+	<main class="bg container m-auto overflow-auto">
+		<Container>
+			<Nav />
 			<div
-				class="mx-auto grid grid-cols-1 items-center gap-x-64 overflow-hidden px-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:pr-32 xl:grid-cols-4"
+				class="h-fit items-center overflow-hidden py-[50px] text-center"
+				in:fly={{ y: 200, duration: 2000 }}
+				out:fade
 			>
-				{#each values as value}
-					<a href={`/details/${value.id}`} target="about:_blank">
-						<div
-							class="grids my-8 mr-11 w-fit cursor-pointer items-center justify-items-center bg-transparent p-[20px] text-center text-white transition duration-500 ease-in-out hover:scale-105"
-						>
-							{#if value.poster_path}
-								<img
-									src={`https://image.tmdb.org/t/p/w500/${value.poster_path}`}
-									class="mx-auto h-full w-fit items-center rounded-3xl p-4"
-									alt="Movie Poster"
-								/>
-							{:else}
-								<img
-									src="/default_poster.png"
-									class="mx-auto h-fit w-[500px] items-center rounded-3xl p-4"
-									alt="Movie Poster"
-								/>
-							{/if}
-							<h3 class="w-64 break-words font-bold">
-								{value.title}
-							</h3>
-						</div>
-					</a>
-				{/each}
+				<h1 class="text-center text-4xl font-bold">Movies</h1>
+				<br />
+				<div
+					class="mx-auto grid grid-cols-1 items-center gap-x-64 overflow-hidden px-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:pr-32 xl:grid-cols-4"
+				>
+					{#each values as value}
+						<a href={`/details/${value.id}`} target="about:_blank">
+							<div
+								class="grids my-8 mr-11 w-fit cursor-pointer items-center justify-items-center bg-transparent p-[20px] text-center text-white transition duration-500 ease-in-out hover:scale-105"
+							>
+								{#if value.poster_path}
+									<img
+										src={`https://image.tmdb.org/t/p/w500/${value.poster_path}`}
+										class="mx-auto h-full w-fit items-center rounded-3xl p-4"
+										alt="Movie Poster"
+									/>
+								{:else}
+									<img
+										src="/default_poster.png"
+										class="mx-auto h-fit w-[500px] items-center rounded-3xl p-4"
+										alt="Movie Poster"
+									/>
+								{/if}
+								<h3 class="w-64 break-words font-bold">
+									{value.title}
+								</h3>
+							</div>
+						</a>
+					{/each}
+				</div>
+				<br />
+				<br />
 			</div>
-			<br />
-			<br />
-		</div>
-	</Container>
+		</Container>
+	</main>
 </html>
 
 <style>
