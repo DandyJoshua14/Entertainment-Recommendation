@@ -27,11 +27,4 @@
 			/>
 		</form>
 	</div>
-	<div class="relative">
-		<button
-			class="relative z-10 block rounded-md border border-solid bg-transparent p-2 focus:border-solid focus:outline-none focus:ring-2 focus:ring-blue-600"
-		>
-			Genres
-		</button>
-	</div>
 </nav>

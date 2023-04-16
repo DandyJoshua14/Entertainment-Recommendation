@@ -8,7 +8,9 @@
 	let searchTerm = '';
 	async function search() {}
 </script>
-
+<svelte:head>
+	<title>Home</title>
+</svelte:head>
 <main>
 	<Home values={filtered} />
 	<Pagination pagenum={page} />
