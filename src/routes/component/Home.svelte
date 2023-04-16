@@ -61,9 +61,13 @@
 										alt="Movie Poster"
 									/>
 								{/if}
-								<h3 class="w-64 break-words font-bold">
-									{value.title}
-								</h3>
+								{#if value.title || value.original_title || value.name}
+									<h3 class="w-64 break-words font-bold">
+										{value.title || value.original_title || value.name}
+									</h3>
+								{:else}
+									<h3 class="w-64 break-words font-bold">Movie Title</h3>
+								{/if}
 							</div>
 						</a>
 					{/each}
