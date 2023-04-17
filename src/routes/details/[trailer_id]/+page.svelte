@@ -35,7 +35,7 @@
 					<div class="mt-7 flex text-center font-bold">
 						<p class="p-2">Genres:&nbsp;</p>
 						{#each infos.genres as genre}
-							<a href="https://www.google.com/search?q={genre.name}" target="about:_blank"
+							<a href={`https://www.google.com/search?q=${genre.name}`} target="about:_blank"
 								><p class="h-fit w-fit rounded-lg border p-2">
 									{genre.name}
 								</p></a
