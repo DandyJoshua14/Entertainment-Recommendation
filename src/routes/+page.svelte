@@ -2,31 +2,14 @@
 	import { Button } from 'sveltestrap';
 	import Home from './component/Home.svelte';
 	import Pagination from './component/Pagination.svelte';
-	import { movies } from '../store';
+	import { onMount } from 'svelte';
+
 	let screenWidth: any;
 	export let data;
-	let mode = '';
-	let maxLength = 10;
-	let active = false;
-	let numbers = 1;
 	let value = data.movies.results;
-	$movies = value;
-	let searchTerms = '';
-	function handleToggle() {
-		if (active === true) {
-			active = false;
-		} else {
-			active = true;
-		}
-	}
-	function enabledm() {
-		if (mode === 'dark') {
-			mode = '';
-		} else {
-			mode = 'dark';
-		}
-	}
-
+	onMount(() => {
+		console.log(value);
+	});
 	let filtered = value;
 </script>
 
