@@ -15,6 +15,7 @@
 
 <svelte:head>
 	<title>Home</title>
+	<meta name="description" content="Movie Recommendation Site From E-Hub" />
 </svelte:head>
 <svelte:window bind:innerWidth={screenWidth} />
 <html lang="en">
