@@ -1,6 +1,6 @@
 <script>
 	import { Container } from 'sveltestrap';
-	import Nav from '../../component/Nav.svelte';
+	import Nav from '$lib/component/Nav.svelte';
 	export let data;
 	let infos = data.respond;
 	let videos = data.videos.results;

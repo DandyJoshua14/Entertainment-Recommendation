@@ -1,6 +1,6 @@
 <script lang="js">
-	import Home from '../../component/Home.svelte';
-	import Pagination from '../../component/Pagination.svelte';
+	import Home from '$lib/component/Home.svelte';
+	import Pagination from '$lib/component/Pagination.svelte';
 	export let data;
 	let page = parseInt(data.numOfPage);
 	let value = data.respond.results;
@@ -8,6 +8,7 @@
 	let searchTerm = '';
 	async function search() {}
 </script>
+
 <svelte:head>
 	<title>Home</title>
 </svelte:head>

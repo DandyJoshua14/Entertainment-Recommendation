@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Button } from 'sveltestrap';
-	import Home from './component/Home.svelte';
-	import Pagination from './component/Pagination.svelte';
+	import Home from '$lib/component/Home.svelte';
+	import Pagination from '$lib/component/Pagination.svelte';
 	import { onMount } from 'svelte';
 
 	let screenWidth: any;
@@ -19,7 +19,7 @@
 </svelte:head>
 <svelte:window bind:innerWidth={screenWidth} />
 <html lang="en">
-	<Home values={filtered} />
+	<Home bind:values={filtered} />
 	<Pagination pagenum={1} />
 </html>
 

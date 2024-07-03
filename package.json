@@ -38,8 +38,8 @@
 	"dependencies": {
 		"bootstrap-icons": "^1.10.3",
 		"dotenv": "^16.0.3",
-		"firebase": "^9.19.1",
-		"mongoose": "7.0.1",
+		"firebase": "^10.12.2",
+		"mongoose": "^7.7.0",
 		"svelte-persistent-store": "^0.1.6",
 		"sveltestrap": "^5.10.0"
 	}

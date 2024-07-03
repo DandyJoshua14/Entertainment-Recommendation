@@ -1,5 +1,5 @@
 <script>
-	import Home from '../../component/Home.svelte';
+	import Home from '$lib/component/Home.svelte';
 
 	export let data;
 	// @ts-ignore
